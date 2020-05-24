@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% load news_filters %}
+
+{% block title %}Каталог{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="header">
+
+            <h1><p>Сравнение телефонов</p></h1>
+
+
+                    <div class="div_line">
+                        <p>Модель:</p>
+                        <p>Цена:</p>
+                        <p>Количество процессоров:</p>
+                        <p>Частота процессоров:</p>
+                        <p>Оперативная память:</p>
+                        <p>Объем памяти хранения:</p>
+                        <p>Поддержка LTE:</p>
+                        <p>Wi-Fi:</p>
+                        <p>Bluetooth:</p>
+                        <p>Поддержка NFC:</p>
+                        <p>Внешний вид:</p>
+                    </div>
+                {% for  phone in phones%}
+
+                    <div class="div_line">
+                        <p>{{phone.name|check_value}}</p>
+                        <p>{{phone.price|check_value}} р.</p>
+                        <p>{{phone.core_num|check_value}}</p>
+                        <p>{{phone.core_frequency|check_value|floatformat}} МГц</p>
+                        <p>{{phone.ram_volume|check_value}} Гб</p>
+                        <p>{{phone.rom_volume|check_value}} Гб</p>
+                        <p>{{phone.lte_exists|check_value}}</p>
+                        <p>{{phone.wifi_version|check_value}}</p>
+                        <p>{{phone.bluetooth_version|check_value}}</p>
+                        <p>{{phone.nfc_exists|check_value}}</p>
+                        <p><img src="{{phone.image}}"></p>
+
+                    </div>
+                {%endfor%}
+
+
+        </div>
+    </div>
+{% endblock %}

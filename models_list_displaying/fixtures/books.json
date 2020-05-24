@@ -1,0 +1,92 @@
+[
+  {
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+      "name": "Война и мир",
+      "author": "Ф.Д. Достоевский",
+      "pub_date": "2018-02-27"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+      "name": "Евгений Онегин",
+      "author": "Александр Пушкин",
+      "pub_date": "2019-02-27"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "name": "Ревизор",
+      "author": "Николай Гоголь",
+      "pub_date": "2019-02-25"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "name": "Триумфальная арка",
+      "author": "Эрих Мария Ремарк",
+      "pub_date": "2018-02-15"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "name": "Робинзон Крузо",
+      "author": "Даниель Дефо",
+      "pub_date": "2018-02-26"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 6,
+    "fields": {
+      "name": "Обломов",
+      "author": "Иван Гончаров",
+      "pub_date": "2018-03-27"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 7,
+    "fields": {
+      "name": "Антон Чехов",
+      "author": "Вишневый сад",
+      "pub_date": "2019-03-27"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 8,
+    "fields": {
+      "name": "Солярис",
+      "author": "Станислав Лем",
+      "pub_date": "2018-02-27"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 9,
+    "fields": {
+      "name": "Приключения Тома Сойера",
+      "author": "Марк Твен",
+      "pub_date": "2018-02-27"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 10,
+    "fields": {
+      "name": "1984",
+      "author": "Джордж Оруэл",
+      "pub_date": "2016-12-06"
+    }
+  }
+]

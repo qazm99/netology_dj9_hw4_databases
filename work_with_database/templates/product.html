@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% load news_filters %}
+
+{% block content %}
+    <div class="container">
+        <div class="header">
+            <h1>Телефон</h1>
+        </div>
+        <div class="phone">
+            <h2>Модель: {{phone.name}}</h2>
+            <h2>Стоимость: {{phone.price}} р.</h2>
+            <h2>Дата релиза: {{phone.release_date}}</h2>
+            <h2>Поддержка LTE: {{phone.lte_exists|lte_exist}}</h2>
+            </div>
+        <div class="phone">
+            <img class="img-class" src="{{phone.image}}">
+        </div>
+    </div>
+{% endblock %}
